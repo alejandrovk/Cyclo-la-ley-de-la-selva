@@ -1,0 +1,33 @@
+<!-- <link rel="stylesheet" type="text/css" href="stylesheets/jquery.countdown.css"> -->
+<div id="columns">
+	<div class="column" ></div>
+	<div class="column" ></div>
+	<div class="column" ></div>
+    <div class="column" ></div>
+</div>
+
+<br>
+
+<div id="animals">
+	<div class = 'animal' draggable="true"><img class='animal-object' data-animal-id="<%= @level4[0].id %>" height= "150px" width= "150px" src='<%= @level4[0].url %>'/><%= @level4[0].id %></div>
+	<div class = 'animal' draggable="true"><img class='animal-object' data-animal-id="<%= @level4[1].id %>" height= "150px" width= "150px" src='<%= @level4[1].url %>'/><%= @level4[1].id %></div>
+	<div class = 'animal' draggable="true"><img class='animal-object' data-animal-id="<%= @level4[2].id %>" height= "150px" width= "150px" src='<%= @level4[2].url %>'/><%= @level4[2].id %></div>
+	<div class = 'animal' draggable="true"><img class='animal-object' data-animal-id="<%= @level4[3].id %>" height= "150px" width= "150px" src='<%= @level4[3].url %>'/><%= @level4[3].id %></div>
+</div>
+
+
+<div id="countdown"  style='position: absolute; color: white; top: 0; right: 0; background-color: red; width: 200px; height: 50px;'></div>
+
+<body>
+<!-- <div id="button"><%= button_to "Play", { :controller => "completeds", :action => "play"} %></div> -->
+<button id="button">Play</button>
+<!-- <div id="1" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
+
+<!-- <img id="sol1" src="img_logo.gif" draggable="true"
+ondragstart="drag(event)" width="336" height="69">
+ -->
+<script type="text/javascript">var limit = 80;</script>
+ <!-- 
+<script type="text/javascript" src="javascripts/jquery.plugin.js"></script> 
+<script type="text/javascript" src="javascripts/jquery.countdown-es.js"></script> -->
+</body>
